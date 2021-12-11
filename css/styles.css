@@ -116,6 +116,7 @@ header {
 .developers-title {
   padding: 30px 0;
   text-align: center;
+  background-color: #ffffff;
 }
 .developers {
   font-size: 16px;
@@ -130,7 +131,36 @@ header {
   font-weight: 400;
   margin-bottom: 0;
 }
+/* Ссылки на соцсети разработчиков*/
+.team-contacts-icons {
+  display: flex;
+  justify-content: center;
 
+  background-color: #ffffff;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  color: #afb1b8;
+  /* background-color: #ffffff; */
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/* Ссылки на соцсети разработчиков*/
 .hero-heading {
   font-size: 44px;
   line-height: 1.36;
@@ -193,7 +223,10 @@ header {
 .nav-pages,
 .nav-contacts,
 .pages,
-.footer-contacts {
+.team-contacts-icons,
+.clients-list,
+.footer-contacts,
+.join-list {
   list-style-type: none;
   text-decoration: none;
 }
@@ -267,10 +300,12 @@ header {
   font-weight: 500;
   padding: 6px 22px;
   border-radius: 4px;
+}
+.tabs:hover,
+.tabs:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .main-page-secondary-title {
   font-size: 36px;
   line-height: 1.17;
@@ -314,7 +349,63 @@ header {
   display: flex;
   list-style-type: none;
 }
-
+/*---Иконки постоянных клиентов*/
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  justify-content: center;
+}
+.clients-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100%-180px) / 6);
+}
+.clients-link {
+  display: block;
+  padding: 16px 31px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.clients-icon {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: none;
+}
+/*---Иконки постоянных клиентов*/
+/*--Секция присоединяйтесь*/
+.join {
+  display: flex;
+  margin-left: 70px;
+  padding-top: 12px;
+  color: var(--hero-text-color);
+}
+.join-title {
+  margin-bottom: 20px;
+  font-size: inherit;
+  color: #ffffff;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social-link-join {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/*--Секция присоединяйтесь*/
 .examples {
   display: flex;
   flex-wrap: wrap;
@@ -328,7 +419,13 @@ header {
 .examples-mockups {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 30px * 3) / 3);
+  flex-basis: calc((100% - 90px) / 3);
+}
+.examples-mockups:hover,
+.examples-mockups:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .examples-mockups:nth-last-child(-n + 3) {
   margin-bottom: 0;
