@@ -129,7 +129,7 @@ header {
   line-height: 1.17;
   color: var(--secondary-text-color);
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 /* Ссылки на соцсети разработчиков*/
 .team-contacts-icons {
@@ -362,9 +362,12 @@ header {
   justify-content: center;
 }
 .clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100%-180px) / 6);
+  flex-basis: calc((100% - 180px) / 6);
 }
 .clients-link {
   display: block;
@@ -384,17 +387,20 @@ header {
 }
 /*---Иконки постоянных клиентов*/
 /*--Секция присоединяйтесь*/
-.join {
+.address-join-footer {
   display: flex;
+}
+.join {
+  /* display: flex; */
   margin-left: 70px;
   padding-top: 12px;
   color: var(--hero-text-color);
 }
 .join-title {
   margin-bottom: 20px;
-  font-size: inherit;
+  font-size: 14px;
   color: #ffffff;
-  line-height: 1.14;
+  line-height: 1.17;
   text-transform: uppercase;
 }
 .social {
