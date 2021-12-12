@@ -370,8 +370,11 @@ header {
   flex-basis: calc((100% - 180px) / 6);
 }
 .clients-link {
-  display: block;
-  padding: 16px 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
